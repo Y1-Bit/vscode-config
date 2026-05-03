@@ -1,0 +1,138 @@
+{
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+
+  // --- Theme & appearance ---
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  // --- Window & layout ---
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
+  "window.titleBarStyle": "native",
+  "breadcrumbs.enabled": false,
+
+  // --- Fonts ---
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.4,
+  "editor.fontWeight": "400",
+  "terminal.integrated.fontFamily": "'Fira Code', Consolas, monospace",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontLigatures.enabled": true,
+
+
+  // --- Editor core ---
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "line",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.guides.indentation": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // --- Vim ---
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-o>": false,
+    "<C-i>": false,
+    "<C-b>": false,
+    "<C-d>": false,
+    "<C-S-g>": false,
+  },
+  "vim.useSystemClipboard": true,
+
+  // --- Explorer ---
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+
+  // --- Files & git ---
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.decorations.enabled": false,
+  "scm.diffDecorations": "none",
+
+  // --- Python ---
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+  "python.analysis.typeEvaluation.strictDictionaryInference": true,
+  "python.analysis.typeEvaluation.strictListInference": true,
+  "python.analysis.typeEvaluation.strictSetInference": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.fixAll.ruff": "explicit",
+          "source.organizeImports.ruff": "explicit"
+      }
+  },
+
+  // --- Terminal & tools ---
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "makefile.configureOnOpen": true,
+  "chat.mcp.gallery.enabled": true,
+
+  // --- Misc ---
+  "update.mode": "default",
+  "extensions.ignoreRecommendations": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "claudeCode.preferredLocation": "sidebar",
+  "security.promptForLocalFileProtocolHandling": false,
+
+  // --- Type Check ---
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.args": ["--strict"],
+
+  // --- Markdown Preview Enhanced ---
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
+  "markdown-preview-enhanced.revealjsTheme": "black.css",
+}
