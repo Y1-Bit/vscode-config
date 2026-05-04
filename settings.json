@@ -70,6 +70,7 @@
     }
   ],
   "vim.handleKeys": {
+    "<C-f>": false,
     "<C-p>": false,
     "<C-o>": false,
     "<C-i>": false,
@@ -78,6 +79,10 @@
     "<C-S-g>": false,
   },
   "vim.useSystemClipboard": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
 
   // --- Explorer ---
   "explorer.compactFolders": false,
@@ -127,7 +132,7 @@
   "claudeCode.preferredLocation": "sidebar",
   "security.promptForLocalFileProtocolHandling": false,
 
-  // --- Type Check ---
+  // --- Mypy ---
   "mypy-type-checker.importStrategy": "fromEnvironment",
   "mypy-type-checker.args": ["--strict"],
 
